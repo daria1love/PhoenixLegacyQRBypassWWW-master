@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'Sansation';
+    src: url("./fonts/Sansation/Sansation-Regular.ttf");
+}
+body{
+    background: linear-gradient(#E4F0FB 0%, rgba(231, 236, 240, 0.2) 100%);
+    background-color: rgba(231, 236, 240, 0.2);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+*{
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #CDE0EA;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+.lkHref > img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.settingsLk{
+	flex: 1 0 auto;
+
+	border-radius: 14px;
+    background: rgba(255, 255, 255, 0.3) !important;
+	padding: 25px;
+}
+
+.settingsLk h1{
+	text-align: center;
+	color: #677888 !important;
+	font-family: Sansation !important;
+    font-size: 28px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;	
+}
+
+.settingsLk h2{
+	color: #677888;
+	font-family: Sansation;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	box-shadow: inset 0 -0.3vh #677888;
+	padding-bottom: 3px;
+	min-height: max-content;
+	width: 30%;	
+	min-width: max-content;
+}
+
+.footer {
+    position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+    flex-shrink: 0;
+}
+
+.logo{
+    width: max-content;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+img{
+    width: 45px;
+    height: 45px;
+    color: #FFFFFF;
+}
+.appellation{
+    display: flex;
+    flex-direction: column;
+    height: 28px;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-family: Sansation;
+    gap: 0px;
+    margin-top: 15px;
+}
+
+.appellation h1{
+    font-size: 18px;
+    height: 17px;
+    margin-bottom: 0px;
+    
+
+}
+
+.appellation h2{
+    margin-top: 0px;
+    font-size: 10px;
+    height: 11px;
+
+}
+.root{
+    display: flex;
+    min-height: calc(100%);
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+svg{
+    height: 100px;
+}
+
+.waves {
+    position:relative;
+    width: 100%;
+    /* margin-bottom:-7px; Fix для сафари */
+    min-height:100px;
+    max-height:100%;
+    /* margin-top: 20px; */
+    bottom: 0;
+    }
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+    }
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+    }
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+    }
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+    }
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+    }
+@keyframes move-forever {
+    0% {
+    transform: translate3d(-90px,0,0);
+    }
+    100% { 
+    transform: translate3d(85px,0,0);
+    }
+    }
+/*Стили для мобильных*/
+@media (max-width: 768px) {
+    .waves {
+    height:40px;
+    min-height:40px;
+    }
+}
+
+.dropdown > button{
+    margin: 0;
+    font-family: Sansation !important;
+    font-size: 20px !important;
+    color:#677888 !important;
+    width: 20%;
+    min-width: 150px;
+    border: none;
+    text-align: start;
+    border-radius: 0 !important;
+    background: none !important;
+    padding: 0 !important;
+    padding-bottom: -1px !important;
+    height: min-content !important;
+}
+
+.btn:hover{
+    box-shadow: inset 0 -0.5vh #677888;
+    color:#677888 !important;
+}
+
+.btn:focus{
+    box-shadow: inset 0 -0.5vh #677888;
+    color:#677888 !important;
+}
+
+.btn{
+    margin-left: 0 !important;
+    background-color:none !important;
+    box-shadow: inset 0 -0.5vh rgba(0,0,0, 0.1);
+}
+
+.dropdown-item{
+    color: #515E6A !important;
+font-family: Inter !important;
+font-size: 14px !important;
+font-style: normal !important;
+font-weight: 400 !important;
+line-height: normal !important;
+}
+
+button{
+    border: none;
+	margin-top: 25px !important;
+    border-radius:11px !important;
+    background: linear-gradient(270deg, #CDE0EB -2.54%, #DCEDF0 85.52%);
+    color: #677888;
+    font-family: sansation !important;
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+button:hover{
+    background-color: #677888;
+    color: #FFFFFF;
+    transition: color 0.6s ease-in-out;
+}
+.baseInfo{
+	margin: 40px 0;
+}
+
+.changePassword{
+	margin: 40px 0;
+}
+
+.infoLkMIREA{
+	margin: 40px 0;
+}
+
+.notify{
+	margin: 40px 0;
+}
+
+
+.listMailing{
+	margin-top: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 3%;
+}
+
+label{
+	color: #677888;
+font-family: Sansation;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.listMailing > div{
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
