@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./lkMIREA.css">
+    <link rel="stylesheet" href="./CSS/scanQR.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
@@ -15,22 +15,28 @@
     <div class="root">
         <header>
             <a class="logo" href="./index.html">
-                <img src="./images/Logo.png" alt="#">
+                <img src="../images/Logo.png" alt="#">
                 <div class="appellation">
                     <h1>PHOENIX LEGACY</h1>
                     <h2>QR Bypass</h2>
                 </div>
             </a>
-            <script src="./check.js"></script>
+            <script src="./JS/check.js"></script>
         </header>
-        <script src="./chekError.js"></script>
-        <div class="dataLkMIREA">
-            <h1>Данные аккаунта учётной системы МИРЭА</h1>
-            <div class="dataMIREA">
-                <h2>accaunt@sumirea.ru</h2>
-            </div>
-            <div class="changeButton">
-                <button onclick="location.href='./lkMIREAChange.html'">Изменить</button>
+        <script src="./JS/chekError.js"></script>
+        <div class="preparationBlock" style="display: none;">
+            <h1>Подготовка к сканированию</h1>
+        </div>
+        <div class="scanQR" style="display: none;">
+            <h1>Сканировать QR код</h1>
+            <div class="scanContent"
+                style="display: flex; flex-direction: row; align-items: center; gap:40px; margin-top: 20px;">
+                <div>
+                    <h1>10/30</h1>
+                </div>
+                <div id="reader" width="1000px"></div>
+                <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+                <script src="./JS/scriptQR.js"></script>
             </div>
         </div>
         <div class="footer">
@@ -48,11 +54,11 @@
                 </g>
             </svg>
         </div>
+        <script src="./JS/preparationToScan.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-
 </body>
 
 </html>
